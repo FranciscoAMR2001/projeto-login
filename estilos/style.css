@@ -20,11 +20,11 @@ body, html {
 }
 
 main {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
 }
 
 section#login {
@@ -58,14 +58,16 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8em;
+    margin: 8px 0px;
 }
 
 form > div.campo {
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
-    width: 100%;
+    width: 98%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -73,15 +75,38 @@ div.campo > label {
     display: none;
 }
 
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #62d5d1;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 6px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1em;
-    width: 100%;
+    width: 98%;
     height: 40px;
     background-color: #49a09d;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -94,14 +119,14 @@ form > a.botao {
     display: block;
     text-align: center;
     font-size: 1em;
-    width: 100%;
+    width: 98%;
     height: 40px;
     padding-top: 6px;
     margin-top: 5px;
     background-color: white;
     color: #326d6b;
     border: 1px solid #49a09d;
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
 }
 
